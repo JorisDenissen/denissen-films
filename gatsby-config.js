@@ -13,6 +13,21 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+
+      resolve: "gatsby-source-graphql",
+      
+        options: {
+        
+        typeName: "WPGraphql",
+        
+        fieldName: "wpcontent",
+        
+        url: "http://denissen-films.local/graphql",
+      
+      },
+      
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -27,8 +42,22 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+
+      resolve: `gatsby-plugin-google-fonts`,
+      
+      options: {
+      
+        fonts: [`Roboto`, `Oswald`],
+        
+        display: "swap",
+      
+      },
+      
+    }, 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-styled-components`
   ],
 }
