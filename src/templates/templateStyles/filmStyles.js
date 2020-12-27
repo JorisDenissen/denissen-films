@@ -19,8 +19,8 @@ export const Wrapper = styled.div`
 
     .film-image {
       position: relative;
-      width: 40vw;
-      height: 40vw;
+      width: 35vw;
+      height: 50vw;
 
       @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
         height: 90vw;
@@ -28,7 +28,7 @@ export const Wrapper = styled.div`
         border-bottom: solid 15px ${COLORS.PRIMARY};
       }
 
-      .roles {
+      .genres {
         position: absolute;
         right: 0;
         bottom: 0;
@@ -47,7 +47,7 @@ export const Wrapper = styled.div`
           border-right: solid 5px ${COLORS.PRIMARY};
         }
 
-        .role {
+        .genre {
           padding: 1rem 1.5rem;
         }
       }
@@ -85,13 +85,13 @@ export const Wrapper = styled.div`
         font-size: 1.8rem;
         text-transform: uppercase;
         margin-left: auto;
-        margin-bottom: auto;
+        margin-bottom: 6rem;
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           font-size: 1.3rem;
           margin-right: auto;
           margin-left: 0;
-          margin-bottom: 1rem;
+          margin-bottom: 6rem;
         }
 
         span:first-child {
@@ -111,6 +111,7 @@ export const Wrapper = styled.div`
       .info {
         font-family: 2rem;
         text-transform: uppercase;
+        font-size: 2rem;
       }
     }
   }
@@ -120,14 +121,15 @@ export const Wrapper = styled.div`
     width: 100%;
     justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 
     @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
       flex-direction: column;
     }
 
     .film-picture {
-      width: 28.5vw;
-      height: 57vw;
+      width: 50vw;
+      height: 25vw;
       margin: 0 1vw;
 
       @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
