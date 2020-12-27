@@ -67,7 +67,7 @@ export const pageQuery = graphql`
                         sourceUrl
                         imageFile{
                             childImageSharp{
-                                fluid(quality: 100){
+                                fluid(quality: 30){
                                     ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
@@ -79,7 +79,7 @@ export const pageQuery = graphql`
                             sourceUrl
                             imageFile{
                                 childImageSharp{
-                                    fluid(quality: 100){
+                                    fluid(quality: 50){
                                         ...GatsbyImageSharpFluid_withWebp
                                     }
                                 }
@@ -90,7 +90,7 @@ export const pageQuery = graphql`
                             sourceUrl
                             imageFile{
                                 childImageSharp{
-                                    fluid(quality: 100){
+                                    fluid(quality: 50){
                                         ...GatsbyImageSharpFluid_withWebp
                                     }
                                 }
@@ -101,7 +101,7 @@ export const pageQuery = graphql`
                             sourceUrl
                             imageFile{
                                 childImageSharp{
-                                    fluid(quality: 100){
+                                    fluid(quality: 50){
                                         ...GatsbyImageSharpFluid_withWebp
                                     }
                                 }
