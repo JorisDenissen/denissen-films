@@ -164,7 +164,7 @@ export const Film = styled(Link)`
   display: flex;
   position: relative;
   width: 22vw;
-  height: 22vw;
+  height: 33vw;
   margin: 2vw;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
